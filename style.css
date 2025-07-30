@@ -25,8 +25,8 @@ h1, h2, span {
     color: #242424;
     text-align: center;
     line-height: 1.25;
-    padding-top: 60px; 
     padding-bottom: 32px;
+    padding-top: 60px;
 }
 
 h1 {
@@ -303,12 +303,10 @@ nav {
 
     .services-flex1 {
   display: flex;
-  flex-wrap: wrap;
   align-items: center;
-  justify-content: center;
-  padding-bottom: 50px;
+  justify-content: space-between;
   margin-top: 30px;
-  padding: 0 5%;
+  padding: 0 10%;
     }
 
     .deal__img--mask {
@@ -518,10 +516,21 @@ nav {
         }
         .labor__img--mask {
             size: 40px;
+            max-width: 290px;
         }
+        .deal__img--mask {
+            max-width: 290px;
+        }
+        .services-flex1 {
+            display: block;
+            justify-content: center;
+            align-items: center;
+        }
+        
        
     }
 
+    
 
 
   
