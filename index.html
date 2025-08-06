@@ -6,13 +6,13 @@
     <title>ACSA Construction LLC</title>
     <link rel="stylesheet" href="./style.css" />
     <script src="https://kit.fontawesome.com/901ad3426a.js" crossorigin="anonymous"></script>
+    <script src="index.js"></script>
   </head>
   <body>
     <section id="about-me">
       <nav>
-         <figure class="logo__blanco--container">
+        <div class="nav__container">
           <img src="./Assets/Logo Blanco.jpg" class="logo__blanco">
-         </figure>
           <ul class="nav__link--list">
               <li>
           <a href="#services" class="
@@ -34,6 +34,30 @@
           nav__link--anchor-primary
           ">Contact</a>
         </li>
+        </ul>
+        <button class="btn__menu" onclick="openMenu()">
+          <i class=" fas fa-bars"></i>
+        </button>
+        <div class="menu__backdrop">
+          <button class="btn__menu btn__menu--close" onclick="closeMenu()">
+            <i class="fas fa-times"></i>
+          </button>
+          <ul class="menu__links">
+            <li class="menu__list">
+              <a href="#services" class="menu__link" onclick="closeMenu()"> 
+              Services</a>
+            </li>
+            <li class="menu__list">
+              <a href="#projects" class="menu__link" onclick="closeMenu()"> 
+              Projects</a>
+            </li>
+            <li class="menu__list">
+              <a href="#contact" class="menu__link" onclick="closeMenu()"> 
+              Contact us</a>
+            </li>
+          </ul>
+        </div>
+        </div>
       </nav>
       <div class="flex flex-1">
         <div class="about-me__info row">
@@ -41,7 +65,6 @@
                 <figure class="about-me__picture--mask">
                     <img src="./Assets/David profesional.jpg" class="about-me__picture" alt="Picture of me">
                 </figure>
-
                 <h1 class="about-me__info--title">
                     Hey! My name is <span class="text--brown">David</span><span class="wave">👋</span>
                 </h1>
